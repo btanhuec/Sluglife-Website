@@ -8,9 +8,40 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap">
+   <style>
+     body {
+      font-family: 'Playfair Display SC', serif;
+     }
+   </style>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+          <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item active nav-link">
+                  <%= link_to 'About Us', posts_aboutus_path , class: "nav-link" %>
+              </li>
+          </ul>
+      </div>
+      <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+          <a class="mx-auto" href="#">
+              <img src="//placehold.it/120/ccff00" class="rounded-circle">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+          <ul class="navbar-nav mr-auto text-center">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">CONTACT US</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <% if false %>
     <nav class="navbar is-warning" role="navigation" aria-label="main navigation" >
       <div class="container">
         <div class="navbar-item">
@@ -44,6 +75,7 @@
         </div>
       </div>
     </nav>
+    <% end %>
   <%= yield %>
 </body>
 </html>
