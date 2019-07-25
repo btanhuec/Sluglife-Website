@@ -17,30 +17,37 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
-          <ul class="navbar-nav ml-auto text-center">
-              <li class="nav-item active nav-link">
-                  <%= link_to 'About Us', posts_aboutus_path , class: "nav-link" %>
+  <nav class="navbar navbar-light navbar-expand-md bg-transparent justify-content-md-center justify-content-start">
+      <a class="navbar-brand d-md-none d-inline" href="">Brand</a>
+      <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="nav-link" href="#"><i class="fa fa-search mr-1"></i></a>
+      <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+          <ul class="navbar-nav mx-auto text-md-center text-left">
+              <li class="nav-item">
+                  <%= link_to 'Home', root_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                  <%= link_to 'About Us', posts_aboutus_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item my-auto">
+                  <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="">STORE</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
               </li>
           </ul>
-      </div>
-      <div class="mx-auto my-2 order-0 order-md-1 position-relative">
-          <a class="mx-auto" href="#">
-              <img src="//placehold.it/120/ccff00" class="rounded-circle">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-      </div>
-      <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
-          <ul class="navbar-nav mr-auto text-center">
-              <li class="nav-item active">
-                  <a class="nav-link" href="#">CONTACT US</a>
-              </li>
+          <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+              <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a> </li>
+              <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter"></i></a> </li>
           </ul>
       </div>
   </nav>
+
   <% if false %>
     <nav class="navbar is-warning" role="navigation" aria-label="main navigation" >
       <div class="container">

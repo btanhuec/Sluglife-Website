@@ -15,16 +15,15 @@
  */
  @import "bootstrap";
 
- .bg-dark {
-    background-color: transparent !important;
- }
 
- .navbar {
-   background-color: transparent;
-   background-image: linear-gradient(transparent), url(sluglifefinal.jpg);
-   background-attachment: fixed;
-   background-position: auto,center top;
- }
+   .navbar {
+      background-attachment: fixed;
+      position: absolute;
+      width: auto;
+      left: 50%;
+      font-size: 120%;
+      transform: translatex(-50%);
+   }
 
  * {
    -moz-box-sizing: border-box;
@@ -42,7 +41,7 @@
  }
 
  div.first {
-   background-image: url(sluglifefinal.jpg);
+   background-image: url(forestlogo.png);
    background-attachment: fixed;
    background-size: cover;
  }
@@ -50,7 +49,7 @@
  }
 
  div.intro{
-   padding-top: 3%;
+   padding-top: 7%;
    padding-bottom: 5%;
    padding-left: 5%;
    padding-right: 5%;
@@ -64,6 +63,7 @@
    text-align: left;
    width: 50%;
    float: left;
+   padding-top:5%;
  }
 
  div.gbork{
