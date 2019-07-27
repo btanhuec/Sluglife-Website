@@ -8,12 +8,12 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap">
+<!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap">
    <style>
      body {
       font-family: 'Playfair Display SC', serif;
      }
-   </style>
+   </style>--> 
 </head>
 
 <body>
@@ -32,13 +32,13 @@
                   <%= link_to 'About Us', posts_aboutus_path, class: "nav-link" %>
               </li>
               <li class="nav-item my-auto">
-                  <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="">STORE</a>
+                  <%= link_to 'Store', products_index_path, class: "nav-link" %>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">News</a>
+                  <a class="nav-link" href="#">Filler 2</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="#">Filler 1</a>
               </li>
           </ul>
           <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">

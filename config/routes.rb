@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get "posts/aboutus"
+  get "products/index"
 
   devise_for :users, controllers: {
     registrations: 'registrations'
