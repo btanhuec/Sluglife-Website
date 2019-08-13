@@ -1,0 +1,99 @@
+<div class = "npad"> </div>
+<div class ="hero-image"> INSERT BANNER HERE </div>
+
+
+  <div class="conatiner">
+    <div class="wrap">
+      <% @product.each do |prod| %>
+      <div class="box">
+       <div class = "prod_img"></div>
+        <div class="date">
+          <div class = "desc">
+            <div class="title">
+            </div>
+            <div class="info">
+              <%= prod.title %>
+
+                             <div><button class="button" name="cart">
+                                  <%= link_to 'View Details', prod  %>
+                             </button></div>`
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <% end %>
+
+       <div class="box">
+        <div class = "prod_img"></div>
+         <div class="date">
+           <div class = "desc">
+             <div class="title">
+
+             </div>
+             <div class="info">
+               SLUG TEE 1
+                              <div><button class="button" name="cart">
+                                   <%= link_to 'View Details', products_slugtee1_path, class: "vbutton" %>
+                              </button></div>`
+             </div>
+
+           </div>
+         </div>
+       </div>
+
+       <div class="box">
+        <div class = "prod_img"></div>
+         <div class="date">
+           <div class = "desc">
+             <div class="title">
+
+             </div>
+             <div class="info">
+               SLUG TEE 1
+                              <div><button class="button" name="cart">
+                                   <%= link_to 'View Details', products_slugtee1_path, class: "vbutton" %>
+                              </button></div>`
+             </div>
+
+           </div>
+         </div>
+       </div>
+
+       <div class="box">
+        <div class = "prod_img"></div>
+         <div class="date">
+           <div class = "desc">
+             <div class="title">
+
+             </div>
+             <div class="info">
+               SLUG TEE 1
+                              <div><button class="button" name="cart">
+                                   <%= link_to 'View Details', products_slugtee1_path, class: "vbutton" %>
+                              </button></div>`
+             </div>
+
+           </div>
+         </div>
+       </div>
+
+       <div class="box">
+        <div class = "prod_img"></div>
+         <div class="date">
+           <div class = "desc">
+             <div class="title">
+
+             </div>
+             <div class="info">
+               SLUG TEE 1
+                              <div><button class="button" name="cart">
+                                   <%= link_to 'View Details', products_slugtee1_path, class: "vbutton" %>
+                              </button></div>`
+             </div>
+
+           </div>
+         </div>
+       </div>
+    </div>
+  </div>

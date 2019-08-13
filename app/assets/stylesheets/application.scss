@@ -19,9 +19,20 @@
  @import "bootstrap";
    .navbar {
       background-attachment: fixed;
+      background-color: #00B8FF;
+      background-size:fill;
       position: absolute;
-      width: auto;
+      width: fill;
       left: 50%;
-      font-size: 100;
+      font-size: 200;
       transform: translatex(-50%);
+      color:black;
+   }
+
+   .navtext{
+     color:black;
+   }
+
+   .navtext:hover {
+     color: #FFFF66;
    }

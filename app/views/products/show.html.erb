@@ -1,0 +1,26 @@
+<% content_for :product_title,  @product.title %>
+
+
+
+<div>
+  <div class = "prodhead"><h1>
+    <%= @product.title %>
+   </h1></div>
+  <div class = "prodinfo">
+  <div class = 'prodcol prodleft teeone'></div>
+  <div class = 'prodcol prodright'>
+    <div class = "prodtitle">
+      <h4>
+        <%= @product.title %>
+      </h4>
+      <div class="proddesc">
+        <%= @product.description %>
+        <div class = "proddetails"> 50% Cotton, 50% Polyester, 100% Slug </div>
+
+      </div>
+      <div><button class = "button"> ADD TO CART </button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>

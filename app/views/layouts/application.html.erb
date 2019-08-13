@@ -2,7 +2,20 @@
 <html>
 
 <head>
-  <title>Blog</title>
+  <title>Slug Life</title>
+  <nav class="navbar navbar-expand-md  justify-content-start">
+          <ul class="navbar-nav mx-auto text-md-center text-left">
+              <li class="nav-item navspec">
+                  <%= link_to 'LOOKBOOK', root_path, class: "nav-link navtext" %>
+              </li>
+              <li class="nav-item my-auto navspec">
+                <%= link_to 'SHOP', products_index_path, class: "nav-link navtext" %>
+              </li>
+              <li class="nav-item navspec">
+                  <%= link_to 'CONTACT', posts_aboutus_path, class: "nav-link navtext" %>
+              </li>
+          </ul>
+  </nav>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -13,75 +26,16 @@
      body {
       font-family: 'Playfair Display SC', serif;
      }
-   </style>--> 
+   </style>-->
 </head>
 
 <body>
-  <nav class="navbar navbar-light navbar-expand-md bg-transparent justify-content-md-center justify-content-start">
-      <a class="navbar-brand d-md-none d-inline" href="">Brand</a>
-      <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="nav-link" href="#"><i class="fa fa-search mr-1"></i></a>
-      <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-          <ul class="navbar-nav mx-auto text-md-center text-left">
-              <li class="nav-item">
-                  <%= link_to 'Home', root_path, class: "nav-link" %>
-              </li>
-              <li class="nav-item">
-                  <%= link_to 'About Us', posts_aboutus_path, class: "nav-link" %>
-              </li>
-              <li class="nav-item my-auto">
-                  <%= link_to 'Store', products_index_path, class: "nav-link" %>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Filler 2</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Filler 1</a>
-              </li>
-          </ul>
-          <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
-              <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a> </li>
-              <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter"></i></a> </li>
-          </ul>
-      </div>
-  </nav>
+
+
+
 
   <% if false %>
-    <nav class="navbar is-warning" role="navigation" aria-label="main navigation" >
-      <div class="container">
-        <div class="navbar-item">
-          <%= link_to 'Home', root_path, class: "navbar-item" %>
-          <div class="navbar-burger burger" data-target="navbar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div id="navbar" class="navbar-menu">
-          <div class="navbar-end">
-            <div class = "navbar-item">
-              <div class = "field is-grouped">
-                <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
-                <% if user_signed_in? %>
-                <div class = "navbar-item has-dropdown is-hoverable">
-                  <%= link_to "Account", edit_user_registration_path, class: "navbar-item"%>
-                  <div class = "navbar-dropdown is-right">
-                    <%= link_to current_user.email, edit_user_registration_path, class: "navbar-item"%>
-                    <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "navbar-item"%>
-                  </div>
-                </div>
-                <% else %>
-                <%= link_to "Sign In", new_user_session_path, class: "navbar-item button is-warning"%>
-                <%= link_to "Sign Up", new_user_registration_path, class: "navbar-item button is-warning"%>
-                <% end %>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+
     <% end %>
   <%= yield %>
 </body>
