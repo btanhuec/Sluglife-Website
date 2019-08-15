@@ -23,13 +23,13 @@ h1{
  }
 
  .hero-image {
-
-  height: 10%;
+  position: relative;
+  background-image: url(Sluglifetitle.jpg);
+  height: 30%;
   background-position:center;
   background-repeat: no-repeat;
-  background-size:contain;
-  position: relative;
-  font-size: 60px;
+  background-size:70%;
+
   text-align:center;
 }
 
@@ -41,20 +41,26 @@ h1{
  }
 
  .info{
-   padding-top: 30px;
+   visibility:hidden;
+ }
+
+ .box:hover .info{
+   visibility: visible;
+   width: auto;
+   padding-top:270px;
  }
 
  .button {
+   border-style: solid;
+   border-color: black;
+   border-width: 1px;
    height: 30px;
-   width:100px;
+   width: 250px;
    background-color: #00B8FF;
-   border: none;
    color: white;
-   padding: 5px;
    text-align: center;
-   display: inline-block;
    font-size: 10px;
-   margin: 4px 1px;
+   align-items:center;
  }
 
  .desc{
@@ -69,7 +75,7 @@ h1{
 
  .conatiner {
  	width: 100%;
- 	height: 600px;
+ 	height: 400px;
  }
  .wrap {
  	display: -webkit-box;
@@ -90,36 +96,34 @@ h1{
  	        flex-direction: row;
  }
 
- .box {
 
+
+ .box {
   position:relative;
- 	margin: 10px;
+ 	margin: 50px;
  	width: 250px;
  	height: 300px;
  	text-align: center;
- 	border-radius: 3px;
+
  	-webkit-transition: 200ms ease-in-out;
  	-o-transition: 200ms ease-in-out;
  	transition: 200ms ease-in-out;
- 	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
- 	        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
  }
 
  .prod_img {
     position: absolute;
     background-position: center;
+    align-items: center;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     background-image: url(randomshirt.jpg);
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:90%;
 }
-  .box:hover .prod_img{
-    background-image: url(randomshirt.jpg);
-   -webkit-filter: blur(2px);
- }
+
 
  .prod_img2 {
     position: absolute;
@@ -132,15 +136,13 @@ h1{
     background-repeat:no-repeat;
     background-size:cover;
 }
-  .box:hover .prod_img2{
-    background-image: url(exampletee.jpg);
-   -webkit-filter: blur(2px);
- }
+
 
  .box:hover {
- 	margin-bottom: -10px;
- 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7);
- 	        box-shadow: 0 0 5px rgba(0,0,0,0.7);
+   border-width: 1px;
+   border-style: solid;
+   border-color:#00B8FF;
+
  }
 
  .box:hover .date{
@@ -552,6 +554,7 @@ h1{
 
 .prodtitle{
   color: #00B8FF;
+  font-style:oblique;
 }
 
 .proddesc{
@@ -569,6 +572,7 @@ h1{
 }
 
 .prodinfo{
+
   padding-left:30px;
   padding-right:30px;
 }
@@ -578,9 +582,48 @@ h1{
 }
 
 .vbutton{
+  font-style:oblique;
+  font-size:15px;
   color: white;
+
 }
 
 .vbutton:hover {
-  color: #FFFF66;
+  font-style:oblique;
+  font-size:15px;
+  color: #F8C84A;
+
+}
+
+.atcbtn{
+  background-color: #00B8FF;
+  font-style:oblique;
+  color: white;
+  width: 200px;
+  border-width: 1px;
+  border-style: solid;
+  border-color:black;
+}
+
+.atcbtn:hover{
+  background-color:#F8C84A;
+  color: #00B8FF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.subtitle{
+  text-align: center;
+  vertical-align: bottom;
+  color: #00B8FF;
+  font-size: 20px;
+  font-style: italic;
+
+}
+
+.subprc{
+  color:black;
+  font-style:normal;
+  font-size: 15px;
 }

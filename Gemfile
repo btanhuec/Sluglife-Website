@@ -44,6 +44,7 @@ gem 'devise' #user authentication
 gem 'gravatar_image_tag' #thumbnails
 gem 'carrierwave', '>= 2.0.0.rc', '< 3.0' #upload files to ruby
 gem "mini_magick" #optimize memory usage
+gem "font-awesome-rails"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

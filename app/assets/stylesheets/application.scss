@@ -12,27 +12,57 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
 
-
  @import "bootstrap";
+ @import "font-awesome";
+
    .navbar {
       background-attachment: fixed;
-      background-color: #00B8FF;
+      background-color: #2e9af2;
       background-size:fill;
       position: absolute;
       width: fill;
+      height:10%;
       left: 50%;
       font-size: 200;
       transform: translatex(-50%);
       color:black;
+      margin-bottom:80px;
    }
 
    .navtext{
-     color:black;
+     font-size:20px;
+     color: white;
    }
 
    .navtext:hover {
-     color: #FFFF66;
+     font-style: oblique;
+
+    color: #F8C84A;
+     -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
    }
+
+   .navcart{
+     font-size: 50px;
+     color: #F8C84A;
+     float: right;
+     vertical-align:center;
+   }
+
+   .logo{
+     height: 90%;
+   }
+
+   .logo:hover{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  font-style: oblique;
+}
+
+.cart{
+  float: right;
+}

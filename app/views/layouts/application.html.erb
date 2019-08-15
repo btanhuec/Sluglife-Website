@@ -2,20 +2,8 @@
 <html>
 
 <head>
-  <title>Slug Life</title>
-  <nav class="navbar navbar-expand-md  justify-content-start">
-          <ul class="navbar-nav mx-auto text-md-center text-left">
-              <li class="nav-item navspec">
-                  <%= link_to 'LOOKBOOK', root_path, class: "nav-link navtext" %>
-              </li>
-              <li class="nav-item my-auto navspec">
-                <%= link_to 'SHOP', products_index_path, class: "nav-link navtext" %>
-              </li>
-              <li class="nav-item navspec">
-                  <%= link_to 'CONTACT', posts_aboutus_path, class: "nav-link navtext" %>
-              </li>
-          </ul>
-  </nav>
+  <title>SLUG</title>
+
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -30,6 +18,28 @@
 </head>
 
 <body>
+
+  <nav class="navbar navbar-expand-md  justify-content-start">
+    <div><%= image_tag("Sluglifetitleclear.png", class: "logo")%></div>
+          <ul class="navbar-nav mx-auto text-left">
+              <li class="nav-item navspec">
+                  <%= link_to 'LOOKBOOK', root_path, class: "nav-link navtext" %>
+              </li>
+              <div class = "nav-item navspec nav-link navtext"> - </div>
+              <li class="nav-item my-auto navspec">
+                <%= link_to 'SHOP', products_index_path, class: "nav-link navtext" %>
+              </li>
+              <div class = "nav-item navspec nav-link navtext"> - </div>
+              <li class="nav-item navspec">
+                <%= link_to 'CONTACT', posts_aboutus_path, class: "nav-link navtext" %>
+              </li>
+          </ul>
+    <div class = "navcart navitem navspec">
+      <%= link_to root_path do %>
+        <%= fa_icon "shopping-cart", class: "nav-link navtext navcart" %>
+      <% end %>
+    </div>
+  </nav>
 
 
 
