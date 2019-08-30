@@ -1,21 +1,20 @@
 
-<div class = "npad"> </div>
-  <div class="conatiner">
-    <div class="wrap">
+<div class = "super">
+  <div class="conatiner a">
+    <div class="wrap a">
       <% @product.each do |prod| %>
-      <div class="box">
-       <div class = "prod_img">
-            <div class="info">
-
-                             <button class="button" name="cart">
-                                  <%= link_to 'VIEW', prod, class: "vbutton"  %>
-                             </button>
-
-            </div>
-            <div class = "subtitle"><%= prod.title %>
+      <div class="box a">
+        <div class = "prod_img imagefor<%= prod.id%>">
+          <div class="info">
+            <button class="button" name="cart">
+              <%= link_to 'VIEW', prod, class: "vbutton"  %>
+            </button>
+          </div>
+          <div class = "subtitle"><%= link_to prod.title, prod, class:"subtitle"  %>
             <div class = "subprc"> $ <%= prod.price %>0</div></div>
+          </div>
         </div>
+        <% end %>
       </div>
-      <% end %>
     </div>
   </div>

@@ -2,11 +2,11 @@
 
 
 
-<div>
+<div class ="a">
   <div class = "prodhead"><h1>
    </h1></div>
   <div class = "prodinfo">
-  <div class = 'prodcol prodleft teeone'></div>
+  <div class = 'prodcol prodleft tee imagefor<%= @product.id%>'></div>
   <div class = 'prodcol prodright'>
     <div class = "prodtitle">
       <h2>
@@ -17,7 +17,23 @@
         <div class = "proddetails"> 100% Slug </div>
 
       </div>
-        <div><button class = "atcbtn"> ADD TO CART </button>
+        <div>
+          <%= form_for @product do |f| %>
+          FORM PASS
+          <!-- contract fields -->
+          <ul>
+            <%= f.fields_for :carted_item do |carted_items_form| %>
+            <li>
+              <%= carted_items_form.select :quantity, [['1','one'],['2','two'],['3','three']] %>
+              <%= carted_items_form.select :size, [['S','s'],['M','m'],['L','l']] %>
+              <!-- products object is lacking a submit fcn -->
+              <%= carted_items_form.button :submit %>
+              <button class = "atcbtn">
+              </button>
+            </li>
+            <% end %>
+          </ul>
+          <% end %>
       </div>
     </div>
   </div>

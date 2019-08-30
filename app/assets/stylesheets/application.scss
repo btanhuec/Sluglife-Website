@@ -20,22 +20,22 @@
  @import "font-awesome";
 
    .navbar {
+     overflow:auto;
       background-attachment: fixed;
-      background-color: #2e9af2;
+      background-color: white;
       background-size:fill;
-      position: absolute;
+      position: fixed;
       width: fill;
       height:10%;
       left: 50%;
       font-size: 200;
       transform: translatex(-50%);
       color:black;
-      margin-bottom:80px;
    }
 
    .navtext{
      font-size:20px;
-     color: white;
+     color: black;
    }
 
    .navtext:hover {

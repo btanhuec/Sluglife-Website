@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
  @import "bootstrap";
 
+ .a{
+   background-color: white;
+ }
  .navbar{
    background-color: black;
  }
@@ -12,9 +15,17 @@ h1{
   padding-top:50px;
 }
 
+.super{
+
+  padding-top: 5%;
+  align-items:top;
+}
+
+
+
+
  body {
  	font-family: 'Roboto', sans-serif;
-
  	background: #fff;
  }
 
@@ -23,15 +34,30 @@ h1{
  }
 
  .hero-image {
-  position: relative;
-  background-image: url(Sluglifetitle.jpg);
-  height: 30%;
+   padding-top:10%;
+  background-size:contain;
   background-position:center;
+  background-image: url(landingim.jpg);
   background-repeat: no-repeat;
   background-size:70%;
 
-  text-align:center;
 }
+  .hero-cont{
+    position:relative;
+    padding-top:10%;
+  }
+
+
+  .landingdiv{
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background:	white;
+    align-content:center;
+    padding-top:5%;
+  }
 
 
  .title{
@@ -47,7 +73,6 @@ h1{
  .box:hover .info{
    visibility: visible;
    width: auto;
-   padding-top:270px;
  }
 
  .button {
@@ -55,12 +80,11 @@ h1{
    border-color: black;
    border-width: 1px;
    height: 30px;
-   width: 250px;
+   width: fill;
    background-color: #00B8FF;
    color: white;
    text-align: center;
    font-size: 10px;
-   align-items:center;
  }
 
  .desc{
@@ -74,14 +98,15 @@ h1{
  }
 
  .conatiner {
+   background-color: #fffff2;
  	width: 100%;
- 	height: 400px;
+ 	height: 100%;
  }
  .wrap {
  	display: -webkit-box;
  	display: -ms-flexbox;
  	display: flex;
-  padding-left:20px;
+
  	-ms-flex-wrap: wrap;
  	    flex-wrap: wrap;
  	-webkit-box-pack: center;
@@ -89,7 +114,7 @@ h1{
  	        justify-content: center;
  	-webkit-box-align: center;
  	    -ms-flex-align: center;
- 	        align-items: center;
+ 	        align-items:baseline;
  	-webkit-box-orient: horizontal;
  	-webkit-box-direction: normal;
  	    -ms-flex-direction: row;
@@ -99,29 +124,24 @@ h1{
 
 
  .box {
-  position:relative;
- 	margin: 50px;
- 	width: 250px;
- 	height: 300px;
- 	text-align: center;
 
- 	-webkit-transition: 200ms ease-in-out;
- 	-o-transition: 200ms ease-in-out;
- 	transition: 200ms ease-in-out;
+  position:relative;
+  margin-left:10px;
+  margin-right:10px;
+ 	width: 280px;
+ 	height: 400px;
+ 	text-align: center;
 
  }
 
  .prod_img {
-    position: absolute;
+    position: relative;
     background-position: center;
     align-items: center;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: url(randomshirt.jpg);
     background-repeat:no-repeat;
-    background-size:90%;
+    background-size:100%;
+    height:80%;
+    width:fill;
 }
 
 
@@ -173,17 +193,7 @@ h1{
    letter-spacing: 3px;
  }
 
- .box h1 {
- 	color: #fff;
- 	padding: 30px;
- 	margin-top: 100px;
- 	text-align: center;
- 	font-weight: 100;
- 	font-size: 25px;
- 	background: rgba(0,0,0,0.8);
- 	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
- 	        box-shadow: 0 0 30px rgba(0,0,0,0.8);
- }
+
 
  .date h4 {
   display:none;
@@ -524,13 +534,12 @@ h1{
   height:40%;
 }
 
-.teeone{
-  background-image: url(randomshirt.jpg);
+.tee{
   background-position: center;
   background-size: contain;
       background-repeat:no-repeat;
       width:50%;
-      height:60%;
+      height:100%;
       float:center;
 }
 
@@ -568,11 +577,11 @@ h1{
 .prodhead{
   color: #00B8FF;
   padding-top:10px;
-  height:20%;
+  height:10%;
 }
 
 .prodinfo{
-
+  height:90%;
   padding-left:30px;
   padding-right:30px;
 }
@@ -617,13 +626,32 @@ h1{
   text-align: center;
   vertical-align: bottom;
   color: #00B8FF;
+  height:30px;
   font-size: 20px;
   font-style: italic;
-
+  visibility: visible;
 }
 
 .subprc{
   color:black;
   font-style:normal;
   font-size: 15px;
+}
+
+.imagefor6{
+  background-image: url(tittyshirt.jpeg);
+  background-position: center;
+}
+
+.imagefor7{
+  background-image: url(twoface.jpeg);
+    background-position: center;
+}
+.imagefor8{
+  background-image: url(slugjaw.jpeg);
+    background-position: center;
+}
+.imagefor9{
+  background-image: url(teeball.jpeg);
+    background-position: center;
 }
