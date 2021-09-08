@@ -64,7 +64,7 @@ group :development do
   #Personal gems for guard
   gem 'guard'
   gem 'guard-livereload', '~> 2.5', require: false
-  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  gem 'better_errors', '~> 2.8'
 end
 
 group :test do
